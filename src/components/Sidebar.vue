@@ -1,21 +1,56 @@
 <template>
     <div class="sidebar">
+        <p>tfeak2</p>
         <Link to="./" name="Home" icon="fas fa-home" />
-        <Link to="./About" name="About" />
+        <Tab :links="projectTab" name="Projects" icon="fas fa-archive" />
+        <Link to="./Vote" name="Campaign" icon="fas fa-vote-yea" />
     </div>
 </template>
 <script>
 import Link from './Link'
+import Tab from './Tab'
 export default {
     components: {
         Link,
+        Tab,
     },
     setup() {
         
-    }, 
+    },
+    data(){
+        return {
+            projectTab: [
+                {
+                    to: "/SwapShoot",
+                    name: "Swap Shoot",
+                    icon: "fas fa-retweet",
+                },
+                {
+                    to: "/RandReddit",
+                    name: "Rand Reddit",
+                    icon: "fas fa-random",
+                }
+            ],
+        }
+    }
 }
 </script>
 <style scoped>
+    p{
+        font-size: 2em;
+        font-weight: 600;
+        margin: 0;
+        padding: 0.25em 0;
+    }
+    img{
+        height: 2.5em;
+    }
+    .logo {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     .sidebar {
         width: 11em;
         color: white;

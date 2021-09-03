@@ -18,12 +18,13 @@ export default {
 <style scoped>
    a{
        text-decoration: none;
+       text-align: left;
        color: white;
        border: none;
        margin: 0;
        border-top-left-radius: 0.5em;
        border-bottom-left-radius: 0.5em;
-       padding: 0.5em;
+       padding: 0.4em;
        margin-top: 0.2em;
        font-weight: medium;
    }
