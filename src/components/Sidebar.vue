@@ -2,7 +2,8 @@
     <div class="sidebar">
         <p>tfeak2</p>
         <Link to="./" name="Home" icon="fas fa-home" />
-        <Tab :links="projectTab" name="Projects" icon="fas fa-archive" />
+        <Tab :links="swapShoot" name="Swap Shoot" icon="fas fa-retweet" />
+        <Link to="./RandReddit" name="Rand Reddit" icon="fas fa-random" />
         <Link to="./Vote" name="Campaign" icon="fas fa-vote-yea" />
     </div>
 </template>
@@ -19,17 +20,17 @@ export default {
     },
     data(){
         return {
-            projectTab: [
+            swapShoot: [
                 {
                     to: "/SwapShoot",
                     name: "Swap Shoot",
                     icon: "fas fa-retweet",
                 },
                 {
-                    to: "/RandReddit",
-                    name: "Rand Reddit",
-                    icon: "fas fa-random",
-                }
+                    to: "/SwapShootPrivacy",
+                    name: "Privacy",
+                    icon: "fas fa-address-card",
+                },
             ],
         }
     }
