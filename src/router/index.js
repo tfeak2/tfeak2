@@ -34,6 +34,13 @@ const routes = [
     component: () =>
       import("../views/RandReddit.vue"),
   },
+  {
+    path: "/Decrypted",
+    name: "Decrypted",
+    
+    component: () =>
+      import("../views/Decrypted.vue"),
+  },
 ];
 
 const router = createRouter({
